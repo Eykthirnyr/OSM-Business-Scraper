@@ -1,106 +1,77 @@
+
 # OpenStreetMap Business Scraper
 
-A Python application with a graphical user interface (GUI) that allows you to fetch business information from **OpenStreetMap** within a specified radius around given coordinates. Features include filtering businesses with or without phone numbers, removing duplicate entries, and exporting the results to an Excel file.
+This Python application allows you to fetch businesses from the OpenStreetMap database within a specified radius of a given latitude and longitude. The results include business names, addresses, and phone numbers. The app provides a graphical user interface (GUI) to enter location information, fetch data, remove duplicates, and save the results to an Excel file.
 
-**Features**
+## Features
 
-**Graphical User Interface (GUI):** Easy-to-use interface built with Tkinter.
+- Fetch businesses (shops, offices, amenities) within a given radius of a location.
+- Option to exclude businesses without phone numbers.
+- Remove duplicate entries by name.
+- Save the fetched businesses into an Excel file (`businesses.xlsx`).
+- Easy-to-use GUI for input and operations.
 
-**Fetch Business Data:** Retrieve businesses from OpenStreetMap within a specified radius.
+## Requirements
 
-**Filter Options:**
+The following Python libraries are required:
 
-Exclude entries without phone numbers.
+- `requests`
+- `tkinter`
+- `openpyxl`
 
-Remove duplicate business names.
+The script checks for missing dependencies and installs them automatically if necessary.
 
-**Data Export:** Save the collected data to an Excel file (businesses.xlsx).
+## Installation
 
-**Automatic Dependency Installation:** The script checks for required modules and installs them if missing.
+Clone this repository and navigate to the project directory:
 
-**Prerequisites**
+```bash
+git clone https://github.com/yourusername/osm-business-scraper.git
+cd osm-business-scraper
+```
 
-**Python 3.x** installed on your system.
+You can run the script directly. If any of the required modules are missing, they will be installed automatically.
 
-Internet connection to access the Overpass API.
+```bash
+python osm_business_scraper.py
+```
 
-**Installation**
+## How It Works
 
-**Install Dependencies:**
+1. **Fetch Businesses:**
+   - Enter the latitude, longitude, and radius (in kilometers).
+   - Click "Fetch Businesses" to retrieve business information.
+   - The data is fetched from the Overpass API using OpenStreetMap data.
 
-The script will automatically check and install missing dependencies when you run it. Alternatively, you can manually install the required packages:
+2. **Remove Duplicate Names:**
+   - If the same business appears multiple times, you can remove duplicates based on their names.
 
-pip install requests tkinter openpyxl
+3. **Save Data:**
+   - Once businesses are fetched, save the results into an Excel file (`businesses.xlsx`).
+   - The saved data includes the business name, address, and phone number (if available).
 
-**Note:** On some systems, you may need to use pip3 instead of pip.
+## GUI Components
 
-**Fetching Businesses**
+- **Latitude, Longitude, and Radius Input:** Specify the geographic coordinates and the search radius.
+- **Exclude Phone Numbers Checkbox:** Exclude entries without phone numbers.
+- **Buttons:** Fetch businesses, remove duplicate names, and save the data.
+- **Status Label:** Displays the number of processed businesses.
 
-**Enter Coordinates:**
+## Code Structure
 
-**Latitude:** Enter the latitude of the center point.
+- **fetch_businesses:** Queries OpenStreetMap for businesses within the specified radius and processes the results.
+- **remove_duplicates:** Removes entries with duplicate names from the fetched data.
+- **save_data:** Exports the results to an Excel file with proper formatting and column adjustments.
+- **construct_address:** Helper function to construct the full address from available OpenStreetMap tags.
 
-**Longitude:** Enter the longitude of the center point.
+## Example Usage
 
-**Enter Radius:**
+After running the script, input the latitude, longitude, and radius, then click the "Fetch Businesses" button. The data is processed in real-time and displayed in a pop-up once the process is completed. You can remove duplicate entries and save the cleaned data to an Excel file.
 
-**Radius (km):** Specify the radius around the center point in kilometers.
+```bash
+# Fetch data around latitude 48.8566, longitude 2.3522 (Paris), with a radius of 2km.
+```
 
-**Fetch Businesses:**
+## License
 
-Click the **"Fetch Businesses"** button to retrieve data.
-
-**Excluding Entries Without Phone Numbers**
-
-**Exclude Entries Without Phone Number:**
-
-Check the box labeled **"Exclude entries without phone number"** if you want to filter out businesses that do not have a phone number listed.
-
-**Removing Duplicate Names**
-
-**Remove Duplicate Names:**
-
-After fetching businesses, click the **"Remove Duplicate Names"** button to eliminate entries with duplicate names from the dataset.
-
-**Saving Data**
-
-**Save Data:**
-
-Click the **"Save Data"** button to export the processed data to an Excel file (businesses.xlsx).
-
-**Output**
-
-The application saves the collected business data to an Excel file named **businesses.xlsx** in the project directory.
-
-The Excel file includes the following columns:
-
-**Name:** The name of the business.
-
-**Address:** The address constructed from available OpenStreetMap tags.
-
-**Phone:** The phone number of the business (if available).
-
-**Dependencies**
-
-The script uses the following Python libraries:
-
-**requests:** For making HTTP requests to the Overpass API.
-
-**tkinter****:** For building the graphical user interface.
-
-**openpyxl****:** For creating and manipulating Excel files.
-
-The script includes a dependency check and will attempt to install any missing modules automatically.
-
-**Acknowledgments**
-
-**OpenStreetMap Contributors:** This application uses data from OpenStreetMap, which is made available under the Open Database License (ODbL).
-
-**Overpass API:** For providing the API to query OpenStreetMap data.
-
-**Attribution:** Contains information from OpenStreetMap, which is made available here under the Open Database License (ODbL).
-
-
-
-**Disclaimer:** This application is intended for educational and personal use. Ensure compliance with the Open Database License (ODbL) when using and sharing the data collected by this application.
-
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
