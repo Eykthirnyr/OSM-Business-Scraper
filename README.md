@@ -72,3 +72,5 @@ After running the script, input the latitude, longitude, and radius, then click 
 # Fetch data around latitude 48.8566, longitude 2.3522 (Paris), with a radius of 2km.
 ```
 
+Clément GHANEME - 2024/10
+
