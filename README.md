@@ -33,5 +33,10 @@ If the modules are not installed, the app will automatically install them.
 - Data fetched from [OpenStreetMap](https://www.openstreetmap.org/)
 - Overpass API for querying OpenStreetMap data
 
+## Changelog
+
+2024/10/21 - Initial release.
+2024/10/21 - Added "osm_business_scraper_advanced.py" for advanced filter handling in API requests.
+
 Clément GHANEME - 2024/10
 
