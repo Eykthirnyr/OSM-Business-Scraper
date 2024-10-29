@@ -40,3 +40,6 @@ If the modules are not installed, the app will automatically install them.
 
 Clément GHANEME - 2024/10
 
+## Screenshot - Application GUI
+
+![GUI](OSM.png)
