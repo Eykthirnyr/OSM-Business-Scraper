@@ -45,7 +45,7 @@ If the modules are not installed, the app will automatically install them.
 
 ## Screenshot - Application GUI
 
-![GUI](OSM.png)
+![GUI](Screenshot_1.png)
 
 ## Changelog
 
