@@ -46,6 +46,7 @@ If the modules are not installed, the app will automatically install them.
 ## Screenshot - Application GUI
 
 ![GUI](Screenshot_1.png)
+![GUI](Screenshot_2.jpg)
 
 ## Changelog
 
