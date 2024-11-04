@@ -5,16 +5,22 @@ This is a Python application that fetches business data from OpenStreetMap using
 ## Features
 - Input latitude, longitude, and search radius (in kilometers)
 - Select business categories from a predefined list (e.g., restaurants, banks, shops)
+- Display categories in an organized grid format for easy selection
+- Centered "Check All" and "Uncheck All" buttons for user convenience
 - Fetch business data based on the selected categories
+- Exclude businesses without a phone number with a simple checkbox
 - Remove duplicate business names
 - Save the results in an Excel file (`businesses.xlsx`)
-- Exclude businesses without a phone number
+- Interactive map integration for selecting location coordinates
+- Clickable link to the developer's website and a GitHub repository button
+- Fixed-size GUI for a consistent user experience
 
 ## Requirements
 The app requires the following Python modules:
 - `requests`
 - `tkinter`
 - `openpyxl`
+- `tkintermapview`
 
 If the modules are not installed, the app will automatically install them.
 
@@ -24,10 +30,14 @@ If the modules are not installed, the app will automatically install them.
 
 ## Usage
 1. Enter the latitude, longitude, and search radius.
-2. Select the business categories you want to include.
-3. Click `Fetch Businesses` to retrieve the data from OpenStreetMap.
-4. Click `Remove Duplicate Names` to remove any duplicate businesses from the results.
-5. Click `Save Data` to save the results in an Excel file.
+2. Use the interactive map button to select location coordinates if needed.
+3. Select the business categories you want to include from the grid layout.
+4. Click `Check All` or `Uncheck All` for convenient category selection.
+5. Click `Fetch Businesses` to retrieve the data from OpenStreetMap.
+6. Click `Remove Duplicate Names` to remove any duplicate businesses from the results.
+7. Check the `Exclude entries without phone number` option if needed.
+8. Click `Save Data` to save the results in an Excel file.
+9. Use the GitHub button to access the project repository or the developer link to visit the website.
 
 ## Acknowledgments
 - Data fetched from [OpenStreetMap](https://www.openstreetmap.org/)
@@ -41,5 +51,6 @@ If the modules are not installed, the app will automatically install them.
 
 - 2024/10/21 - Initial release.
 - 2024/10/21 - Added "osm_business_scraper_advanced.py" for advanced filter handling in API requests.
+- 2024/11/04 - Enhanced GUI with fixed window size (645x888), organized category grid, added interactive map feature, added GitHub repository button, added website link.
 
-Clément GHANEME - 2024/10
+Clément GHANEME - 2024/11
