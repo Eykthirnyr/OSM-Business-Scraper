@@ -53,5 +53,6 @@ If the modules are not installed, the app will automatically install them.
 - 2024/10/21 - Initial release.
 - 2024/10/21 - Added "osm_business_scraper_advanced.py" for advanced filter handling in API requests.
 - 2024/11/04 - Enhanced GUI with fixed window size (645x888), organized category grid, added interactive map feature, added GitHub repository button, added website link.
+- 2024/11/05 - Translated the app and adjusted the GUI for French (FR) and Spanish (ES). Compiled both and added to the release repo.
 
 Clément GHANEME - 2024/11
