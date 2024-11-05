@@ -104,8 +104,8 @@ The project uses Composer for dependency management, specifically for the PhpSpr
 
 ## Screenshots
 
-![Application GUI](images/screenshot1.png)
-![Application GUI - Mobile View](images/screenshot2.png)
+![Application GUI](Screenshot_1.png)
+![Output File](Screenshot_2.jpg)
 
 ## Notes
 
