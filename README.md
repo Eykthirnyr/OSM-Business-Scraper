@@ -23,6 +23,8 @@ This is a **PHP web application** that fetches business data from OpenStreetMap 
   - Loading indicators during data fetching
   - Data persistence between actions (inputs are retained)
   - Clickable links to the developer's website and GitHub repository
+ 
+Try it : https://clement.business/OSM-Business-Scraper
 
 ## Requirements
 
