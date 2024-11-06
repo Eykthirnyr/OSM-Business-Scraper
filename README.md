@@ -37,8 +37,8 @@ Try it on my website : https://clement.business/OSM-Business-Scraper
 
 1. **Download the Project:**
 
-   - Download the zipped folder `OSM-Business-Scraper.zip` from the repository.
-   - Extract the folder. You should have a folder named `OSM-Business-Scraper`.
+   - Download this project from the repository.
+   - Extract the folder.
 
 2. **Place the Project in Your Web Server's Root Directory:**
 
