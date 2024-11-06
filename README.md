@@ -126,7 +126,7 @@ The project uses Composer for dependency management, specifically for the PhpSpr
 - **2024/11/06** - Updated README and project structure for easy deployment.
   - Included all Composer files and libraries within the project.
   - Adjusted installation instructions accordingly.
-  - **2024/11/06** - Added cooldown feature for each unique public ip ; improved gui.
+- **2024/11/06** - Added cooldown feature for each unique public ip ; improved gui.
 
 ## Acknowledgments
 
